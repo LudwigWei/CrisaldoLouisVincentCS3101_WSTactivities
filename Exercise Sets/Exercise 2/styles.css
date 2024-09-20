@@ -11,11 +11,11 @@
 }
 
 body {
-    background-image: url('assets/images/background.jpg'); /* Path to your background image */
-    background-size: cover; /* Scales the image to cover the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background in a fixed position when zoomed or scrolled */
-    background-position: center; /* Centers the background image */
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ body {
     border-radius: 20px;
 }
 
-.green {
+.white {
     background-color: #ffffff;
 }
 
