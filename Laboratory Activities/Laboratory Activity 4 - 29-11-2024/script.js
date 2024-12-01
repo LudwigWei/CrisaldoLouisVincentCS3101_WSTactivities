@@ -266,25 +266,12 @@ const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate-in');
-            entry.target.classList.remove('animate-out');
             
             // Animate content elements within the section
             const contentElements = entry.target.querySelectorAll('.content-animate');
             contentElements.forEach(element => {
                 element.classList.add('visible');
             });
-        } else {
-            // Only apply outro animation if the section was previously visible
-            if (entry.target.classList.contains('animate-in')) {
-                entry.target.classList.add('animate-out');
-                entry.target.classList.remove('animate-in');
-                
-                // Reset content animations
-                const contentElements = entry.target.querySelectorAll('.content-animate');
-                contentElements.forEach(element => {
-                    element.classList.remove('visible');
-                });
-            }
         }
     });
 }, animationOptions);
